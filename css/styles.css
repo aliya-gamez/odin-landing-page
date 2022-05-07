@@ -48,10 +48,15 @@ body {
     background-color: #1F2937;
     color: white;
     display: flex;
-    justify-content: space-between;
-    gap: 75px;
+    justify-content: center;
     align-items: center;
-    padding: 130px 20%;
+    padding: 130px 0;
+}
+
+.hero .text {
+    padding: 0 20px;
+    min-width: 100px;
+    max-width: 500px;
 }
 
 .hero .msg {
@@ -77,8 +82,9 @@ body {
 }
 
 .hero .img {
-    flex: 0 1 auto;
-    width: 500px;
+    min-width: 440px;
+    max-width: 550px;
+    padding: 0 30px;
     height: auto;
     border-radius: 5px;
 }
@@ -105,17 +111,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    padding: 0 20px;
 }
 
 .gallery .item {
-    width: 200px;
+    max-width: 270px;
+    min-width: 200px;
 }
 
 .gallery .img {
     border: 5px solid #3882F6;
     border-radius: 25px;
-    width: 100%;
+    width: 170px;
     height: auto;
 }
 
@@ -127,11 +134,19 @@ body {
 /* quote */
 
 .quote {
-    background-color: #E5E7EB;
     display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.quote .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    max-width: 900px;
     gap: 20px;
-    padding: 130px 25%;
+    padding: 130px 30px;
 }
 
 .quote .text {
@@ -151,7 +166,9 @@ body {
 /* signup */
 
 .action {
-    padding: 110px 20%;
+    padding: 110px 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .action .box{
@@ -161,6 +178,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    max-width: 1000px;
     padding: 50px 50px;
     border-radius: 5px;
 }
